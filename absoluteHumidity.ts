@@ -13,7 +13,7 @@ const AIR_AH_CONSTANT = 2.16679
 const G_KG_CONSTANT = 1.204
 /**
  * Generates Absolute Humidity
- * In order to transform absolute humidity to Grams/KiloGrams (g/kg), multiply return value by 1.204
+ * In order to transform absolute humidity to Grams/KiloGrams (g/kg), divide return value by 1.204
  * @param temperature (C)
  * @param relativeHumidity (%)
  * @returns absolute humidity (g/m3)
