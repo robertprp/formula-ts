@@ -47,8 +47,8 @@ function get_hour_angle(date: Date, lon: number) {
 
 function get_solar_time(date: Date, lon: number) {
   return (
-    (date.getHours() * 60 +
-      date.getMinutes() +
+    ((date.getUTCHours()) * 60 +
+      date.getUTCMinutes() +
       4 * lon +
       equationOfTime(daysIntoYear(date))) /
     60
@@ -57,7 +57,7 @@ function get_solar_time(date: Date, lon: number) {
 
 function daysIntoYear(date: Date) {
   return (
-    (Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()) -
+    (Date.UTC(date.getFullYear(), date.getUTCMonth(), date.getUTCDate()) -
       Date.UTC(date.getFullYear(), 0, 0)) /
     24 /
     60 /
