@@ -57,7 +57,7 @@ function get_solar_time(date: Date, lon: number) {
 
 function daysIntoYear(date: Date) {
   return (
-    (Date.UTC(date.getFullYear(), date.getUTCMonth(), date.getUTCDate()) -
+    (Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()) -
       Date.UTC(date.getFullYear(), 0, 0)) /
     24 /
     60 /
