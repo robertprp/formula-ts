@@ -1,7 +1,8 @@
 /**
  * Roberto Perez 2020
  * Under MIT License
- *
+ * DISCLAIMER: The percentage of error of this code is around +- 0.07%. 
+ * Temperatures over 100-120 oC should not be calculated using this library as the error margin will increase considerably.
  */
 
 // Constants
